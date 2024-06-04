@@ -3,7 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    background: url('1.png') center center no-repeat fixed; /* Background image */
     color: #fff; /* White text color */
 }
 
@@ -264,44 +264,65 @@ a {
 a:hover {
     color: #ff6d42; /* Lighter orange on hover */
 }
+/* Title Styles */
+#descriptionContainer h2 {
+    margin-top: 30px; /* Space from top */
+    margin-bottom: 50px; /* Add some space below the title */
+}
 /* Description Container Styles */
 #descriptionContainer {
     margin-top: 100px; /* Space from top */
     color: black; /* Black text color */
-    padding:10px;
+    text-align: center; /* Center-align text */
+
 }
 
-#descriptionContainer h2 {
-    font-size: 40px;
-    color: black;
-    margin: 15px 0;
+/* First Box Styles */
+#firstBox {
+    margin-bottom: 30px; /* Add some space between boxes */
+    background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow */
 }
 
-#descriptionContainer p {
-    font-size: 20px;
-    color: black;
+#firstBox p {
+    font-size: 16px;
     line-height: 1.5;
 }
 
-#descriptionContainer ul {
+/* Second Box Styles */
+#secondBox {
+    border-top: 1px solid #ccc; /* Add a border above the second box */
+    padding-top: 20px; /* Add some space between boxes */
+    background-color: rgba(255, 255, 255, 0.7); /* Translucent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+#secondBox p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#secondBox ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 10px;
 }
 
-#descriptionContainer ul li {
+#secondBox ul li {
     margin: 10px 0;
-    font-size: 20px;
-    color: black;
+    font-size: 16px;
 }
 
-#descriptionContainer ul li a {
-    color: #000860;
+#secondBox ul li a {
+    color: #ff5722;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-#descriptionContainer ul li a:hover {
-    color: #0012d7;
+#secondBox ul li a:hover {
+    color: #ff6d42;
 }
